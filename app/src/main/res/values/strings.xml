@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Splash Screen Example</string>
+    <string name="login_hint">Login</string>
+    <string name="password_hint">Password</string>
+    <string name="ok_button_text">OK</string>
+    <string name="cancel_button_text">Cancel</string>
+    <string name="error_empty_login">Please enter your login</string>
+    <string name="error_empty_password">Please enter your password</string>
 </resources>
