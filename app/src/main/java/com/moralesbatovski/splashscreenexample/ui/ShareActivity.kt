@@ -10,11 +10,11 @@ import com.moralesbatovski.splashscreenexample.R
  */
 class ShareActivity : SplashedActivity() {
 
-    private val helloText by lazy { findViewById<TextView>(R.id.hello_text) }
+    private val helloText by lazy { findViewById<TextView>(R.id.shared_text) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_share)
         getUser()?.let {
             helloText.text = "${it.login}\n${intent.getStringExtra(Intent.EXTRA_TEXT)}"
         }

@@ -29,7 +29,8 @@
                 android:id="@+id/login_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="@string/login_hint" />
+                android:hint="@string/login_hint"
+                android:inputType="text" />
 
             <EditText
                 android:id="@+id/password_edit_text"
@@ -39,22 +40,26 @@
                 android:inputType="textWebPassword" />
 
             <LinearLayout
+                style="?android:attr/buttonBarStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:orientation="horizontal">
 
                 <Button
+                    android:id="@+id/cancel_button"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cancel_button_text" />
+
+                <Button
                     android:id="@+id/ok_button"
+                    style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/ok_button_text" />
 
-                <Button
-                    android:id="@+id/cancel_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/cancel_button_text" />
             </LinearLayout>
 
         </LinearLayout>
